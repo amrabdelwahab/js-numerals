@@ -1,0 +1,17 @@
+{
+  "name": "js-numerals",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Tudor Fis <tudor.fis@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
