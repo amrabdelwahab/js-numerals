@@ -2,3 +2,4 @@
 node_modules
 app/lib
 npm-debug.log
+app/assets/css/app.css

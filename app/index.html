@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
     <title>Home</title>
     <meta charset="utf-8">
@@ -9,9 +9,19 @@
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body>
-
-<p>Welcome to js-numerals, an amazing product that helps you convert from arabic to english phrase</p>
-
+<body ng-controller="AppController">
+    <p>Welcome to js-numerals, an amazing service that <br> helps you convert from arabic to english phrase</p>
+    <hr />
+    <form ng-submit="convertArabicToPhrase()">
+        <p class="result" ng-show="english_phrase">
+            Result: <span ng-bind="english_phrase"></span>
+        </p>
+        <input type="text" ng-model="arabic_number" placeholder="Enter arabic number" autofocus>
+        <button type="submit">Convert</button>
+        <p class="error" ng-bind="error_message"></p>
+    </form>
+<script src="lib/angular/angular.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/controllers/AppController.js"></script>
 </body>
 </html>
