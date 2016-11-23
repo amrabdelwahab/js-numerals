@@ -72,12 +72,12 @@ app.controller('AppController', ['$scope', function($scope){
 
                 var hn = parseInt(((an % 1000) / 100).toString().charAt(0));
                 if (hn) {
-                    result = nObj[hn] + ' hundred '+ result;
+                    result = nObj[hn] + ' hundred and '+ result;
                 }
 
                 var mn = parseInt(((an % 10000) / 1000).toString().charAt(0));
                 if (mn) {
-                    result = nObj[mn] + ' thousand '+ result;
+                    result = nObj[mn] + ' thousand and '+ result;
                 }
 
                 $scope.english_phrase = result;
